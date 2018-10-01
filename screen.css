@@ -7,3 +7,44 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+/*Base Rules*/
+html{
+  /*basing off of the perfect 4th from www.modularscale.com*/
+  font-size: 18px;
+  line-height: 24px; /* 1.2*18/16=1.35 , seems too large, so shrink this # */
+  padding-left: 22px;
+  padding-right: 22px;
+  font-family: Gautami, "Gill Sans Nova", Georgia, Verdana, sans-serif;
+/*maybe use courier for the caption things*/
+}
+header{
+  background-color: black;
+  color: white;
+  padding-top: 1.222em;
+  padding-bottom: 1em;
+}
+h1, h2, h3, h4, h5, h6{
+font-weight: bold;
+}
+h1{
+  font-size: 1.777em;2.369em;
+}
+h2{
+  padding-top: 21.6px;
+}
+h3{
+  padding-top: 21.6px;
+  padding-bottom: 1.6px;
+}
+h4{
+  padding-top: 16.4px;
+  padding-bottom: 1.6px;
+}
+p{
+  padding-top: ;
+}
+/*Layout Rules*/
+
+/*Module Rules*/
+
+/*State Rules*/

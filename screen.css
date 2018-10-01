@@ -43,6 +43,12 @@ h4{
 p{
   padding-top: ;
 }
+
+/* images */
+img{
+  display: block;
+  max-width: 100%;
+}
 /*Layout Rules*/
 
 /*Module Rules*/

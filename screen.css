@@ -12,8 +12,6 @@ html{
   /*basing off of the perfect 4th from www.modularscale.com*/
   font-size: 18px;
   line-height: 24px; /* 1.2*18/16=1.35 , seems too large, so shrink this # */
-  padding-left: 22px;
-  padding-right: 22px;
   font-family: Gautami, "Gill Sans Nova", Georgia, Verdana, sans-serif;
 /*maybe use courier for the caption things*/
 }
@@ -22,6 +20,12 @@ header{
   color: white;
   padding-top: 1.222em;
   padding-bottom: 1em;
+  width: 100%;
+}
+
+main {
+  padding-left: 22px;
+  padding-right: 22px;
 }
 h1, h2, h3, h4, h5, h6{
 font-weight: bold;
@@ -40,17 +44,37 @@ h4{
   padding-top: 16.4px;
   padding-bottom: 1.6px;
 }
-p{
-  padding-top: ;
+#menu{
+  text-align: right;
+  padding-right: 22px;
+}
+#logo{
+  padding-left: 22px;
+}
+ul{
+  list-style-type: disc;
+  padding-left:
 }
 
 /* images */
 img{
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
+
+
 /*Layout Rules*/
 
 /*Module Rules*/
-
+#header{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: auto;
+}
+#logo{
+  grid-column: 1;
+}
+#menu{
+  grid-column: 2;
+}
 /*State Rules*/

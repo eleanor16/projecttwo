@@ -61,7 +61,7 @@ h4{
 /* images */
 img{
   display: block;
-  width: 50%;
+  width: 100%;
 }
 footer{
   background-color: black;
@@ -81,6 +81,7 @@ footer{
 }
 #logo{
   grid-column: 1;
+  align-self: end;
 }
 #menu{
   grid-column: 2;

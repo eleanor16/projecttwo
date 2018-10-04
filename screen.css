@@ -59,7 +59,13 @@ ul{
 /* images */
 img{
   display: block;
-  width: 100%;
+  width: 50%;
+}
+footer{
+  background-color: black;
+  color: white;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 

@@ -47,11 +47,13 @@ h4{
 #menu{
   text-align: right;
   padding-right: 22px;
+  font-size: 14px;
+  color: white;
 }
 #logo{
   padding-left: 22px;
 }
-ul{
+#biblestudy{
   list-style-type: disc;
   padding-left: 22px;
 }

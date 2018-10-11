@@ -50,6 +50,10 @@ h4{
   font-size: 14px;
   color: white;
 }
+#menu a {
+  color: #ffffff;
+  font-size: 16px;
+}
 #logo{
   padding-left: 22px;
 }
@@ -86,4 +90,5 @@ footer{
 #menu{
   grid-column: 2;
 }
+
 /*State Rules*/

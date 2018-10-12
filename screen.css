@@ -44,6 +44,7 @@ p{
   padding-bottom: 13px;
 }
 figcaption{
+  font-size: 16px;
   padding-top: 7.5px;
 }
 a{
@@ -92,7 +93,33 @@ img{
 
 
 /*Layout Rules*/
-
+@media screen and (min-width: 440px){
+  #logo{
+    width: 300px;
+  }
+}
+@media screen and (min-width: 500px){
+  figure{
+    width: 460px;
+  }
+}
+@media screen and (min-width: 592px){
+  p{
+    width: 552px;
+  }
+}
+@media screen and (min-width: 760px){
+  #menu a{
+    font-size: 26.66px;
+    line-height: 48px; /* 27px x 1.2~32px (times 1.5)=48px */
+  }
+  h1{
+    font-size: 35.538px;
+  }
+  h2{
+    font-size: 30px;
+  }
+}
 /*Module Rules*/
 #header{
   display: grid;

@@ -10,39 +10,54 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /*Base Rules*/
 html{
   /*basing off of the perfect 4th from www.modularscale.com*/
-  font-size: 18px;
-  line-height: 24px; /* 1.2*18/16=1.35 , seems too large, so shrink this # */
-  font-family: Gautami, "Gill Sans Nova", Georgia, Verdana, sans-serif;
+  font-size: 20px;
+  background-color: #e8e6e4;
+  line-height: 26px; /* 1.2*20=24 , seems too small, so make this number bigger */
+  font-family: Helvetica, "Gill Sans Nova", Georgia, Verdana, sans-serif;
 /*maybe use courier for the caption things*/
 }
 header{
-  background-color: black;
-  color: white;
-  padding-top: 1.222em;
-  padding-bottom: 1em;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
 }
 
 main {
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 h1, h2, h3, h4, h5, h6{
 font-weight: bold;
 }
 h1{
-  font-size: 1.777em;2.369em;
+  font-size: 30px;
+  color: #007499;
+  padding-bottom: 13px;
 }
 h2{
-  padding-top: 21.6px;
+  color: #FBB903;
+  font-size: 26.66px; /*em=1.666 */
+  padding-bottom: 7.5px;
 }
-h3{
-  padding-top: 21.6px;
-  padding-bottom: 1.6px;
+p{
+  padding-bottom: 13px;
 }
-h4{
-  padding-top: 16.4px;
-  padding-bottom: 1.6px;
+figcaption{
+  padding-top: 7.5px;
+}
+a{
+  color: #00B2CE;
+}
+footer{
+  background-color: #007499;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.endingp{
+  padding-bottom: 7.5px;
 }
 #menu{
   text-align: right;
@@ -51,14 +66,20 @@ h4{
   color: white;
 }
 #menu a {
-  color: #ffffff;
+  color:#007499 ;
   font-size: 16px;
-}
+} /*colors in the logo: orange= #FC7203  dark blue=#007499  light blue=#00B2CE
+     yellow=#FBB903  grey=#616161 */
 #logo{
   padding-left: 22px;
 }
+#who{
+  padding-top: 13px;
+  padding-bottom: 7.5px;
+}
 #biblestudy{
   list-style-type: disc;
+  padding-bottom: 16.4px;
   padding-left: 22px;
 }
 
@@ -67,12 +88,7 @@ img{
   display: block;
   width: 100%;
 }
-footer{
-  background-color: black;
-  color: white;
-  padding-left: 22px;
-  padding-right: 22px;
-}
+
 
 
 /*Layout Rules*/

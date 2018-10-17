@@ -13,7 +13,7 @@ html{
   font-size: 20px;
   background-color: #e8e6e4;
   line-height: 26px; /* 1.2*20=24 , seems too small, so make this number bigger */
-  font-family: Helvetica, "Gill Sans Nova", Georgia, Verdana, sans-serif;
+  font-family: Montserrat, Helvetica, "Gill Sans Nova", Georgia, Verdana, sans-serif;
 /*maybe use courier for the caption things*/
 }
 header{
@@ -118,6 +118,15 @@ img{
   }
   h2{
     font-size: 30px;
+  }
+}
+@media screen and (min-width: 884px){
+  .menu{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .menu li {
+    flex: 1 0;
   }
 }
 /*Module Rules*/

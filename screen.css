@@ -30,12 +30,15 @@ main {
 h1, h2, h3, h4, h5, h6{
 font-weight: bold;
 }
-h1{
+h1,h2{
   font-size: 30px;
   color: #007499;
   padding-bottom: 13px;
 }
 h2{
+  padding-top: 13px;
+}
+h3{
   color: #FBB903;
   font-size: 26.66px; /*em=1.666 */
   padding-bottom: 7.5px;
@@ -78,7 +81,7 @@ footer{
   padding-top: 13px;
   padding-bottom: 7.5px;
 }
-#biblestudy{
+#dates{
   list-style-type: disc;
   padding-bottom: 16.4px;
   padding-left: 22px;
@@ -87,7 +90,7 @@ footer{
 /* images */
 img{
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 
@@ -128,19 +131,24 @@ img{
   .menu li {
     flex: 1 0;
   }
-}
+
 /*Module Rules*/
 #header{
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
 }
 #logo{
   grid-column: 1;
   align-self: end;
+  display: flex;
+}
+#logo img{
+  flex: 0 1 200px;
 }
 #menu{
   grid-column: 2;
 }
+
 
 /*State Rules*/

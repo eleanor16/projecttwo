@@ -131,6 +131,18 @@ img{
   .menu li {
     flex: 1 0;
   }
+  #boatpic{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 13px;
+  }
+  #boatpic img{
+    grid-column: 1/2;
+  }
+  #boatpic figcaption{
+    grid-column: 2/2;
+  }
 
 /*Module Rules*/
 #header{

@@ -112,7 +112,7 @@ img{
 
 /*Layout Rules*/
 @media screen and (min-width: 440px){
-  #logo{
+  #header img{
     width: 300px;
   }
 }

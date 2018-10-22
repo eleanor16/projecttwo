@@ -93,7 +93,22 @@ img{
   max-width: 100%;
 }
 
+/*Module Rules*/
+#header{
+  display: grid;
+  grid-template-columns: 53% 47%;
+  grid-template-rows: auto;
+}
+#header img{
+  grid-column: 1/2;
+  align-self: end;
+  width: 100px;
+}
 
+}
+#menu{
+  grid-column: 2/2;
+}
 
 /*Layout Rules*/
 @media screen and (min-width: 440px){
@@ -127,6 +142,8 @@ img{
   .menu{
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
   }
   .menu li {
     flex: 1 0;
@@ -148,23 +165,7 @@ img{
     width: 153px;
   }
 
-/*Module Rules*/
-#header{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-}
-#logo{
-  grid-column: 1;
-  align-self: end;
-  display: flex;
-}
-#logo img{
-  flex: 0 1 200px;
-}
-#menu{
-  grid-column: 2;
-}
+
 
 
 /*State Rules*/

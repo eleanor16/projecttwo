@@ -46,6 +46,7 @@ h3{
 p{
   padding-bottom: 13px;
 }
+
 figcaption{
   font-size: 16px;
   padding-top: 7.5px;
@@ -108,9 +109,7 @@ img{
   align-self: end;
   width: 100px;
 }
-
-}
-#menu{
+.menu{
   grid-column: 2/2;
 }
 
@@ -146,12 +145,16 @@ img{
   #header{
     grid-template-columns: 30% 70%;
   }
+  nav{
+    padding-right: 20px;
+  }
   nav ul{
     display: flex;
-
+    margin: 0 -3.75px;
   }
   nav ul li{
     flex-grow: 1;
+    margin: 0 3.75px;
     text-align: center;
   }
   #images{

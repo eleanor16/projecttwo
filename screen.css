@@ -50,9 +50,6 @@ figcaption{
   font-size: 16px;
   padding-top: 7.5px;
 }
-a{
-  color: #00B2CE;
-}
 footer{
   background-color: #007499;
   color: white;
@@ -63,9 +60,12 @@ footer{
 .endingp{
   padding-bottom: 7.5px;
 }
+nav{
+  padding-right: 3.75px;
+}
 nav a{
   background-color: #007499;
-  border-radius: 5.5px;
+  border-radius: 7.5px;
   color: white;
   display: block;
   font-size: 16px;
@@ -79,7 +79,7 @@ nav ul li{
  /*colors in the logo: orange= #FC7203  dark blue=#007499  light blue=#00B2CE
      yellow=#FBB903  grey=#616161 */
 #logo{
-       padding-left: 22px;
+  padding-left: 22px;
 }
 #who{
   padding-top: 13px;
@@ -100,7 +100,7 @@ img{
 /*Module Rules*/
 #header{
   display: grid;
-  grid-template-columns: 53% 47%;
+  grid-template-columns: 70% 30%;
   grid-template-rows: auto;
 }
 #header img{
@@ -143,8 +143,12 @@ img{
   }
 }
 @media screen and (min-width: 884px){
+  #header{
+    grid-template-columns: 30% 70%;
+  }
   nav ul{
     display: flex;
+
   }
   nav ul li{
     flex-grow: 1;

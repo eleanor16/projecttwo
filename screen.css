@@ -46,7 +46,9 @@ h3{
 p{
   padding-bottom: 13px;
 }
-
+p a{
+  color: #00B2CE;
+}
 figcaption{
   font-size: 16px;
   padding-top: 7.5px;

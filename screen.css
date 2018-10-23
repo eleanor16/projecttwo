@@ -63,26 +63,30 @@ footer{
 .endingp{
   padding-bottom: 7.5px;
 }
-#menu{
-  text-align: right;
-  padding-right: 22px;
-  font-size: 14px;
+nav a{
+  background-color: #007499;
+  border-radius: 5.5px;
   color: white;
-}
-#menu a {
-  color:#007499 ;
+  display: block;
   font-size: 16px;
-} /*colors in the logo: orange= #FC7203  dark blue=#007499  light blue=#00B2CE
+  padding: 3.75px 0;
+  text-decoration: none;
+}
+nav ul li{
+  text-align: center;
+  padding-bottom: 7.5px;
+}
+ /*colors in the logo: orange= #FC7203  dark blue=#007499  light blue=#00B2CE
      yellow=#FBB903  grey=#616161 */
 #logo{
-  padding-left: 22px;
+       padding-left: 22px;
 }
 #who{
   padding-top: 13px;
   padding-bottom: 7.5px;
 }
 #dates{
-  list-style-type: disc;
+  list-style-type: square;
   padding-bottom: 16.4px;
   padding-left: 22px;
 }
@@ -139,14 +143,12 @@ img{
   }
 }
 @media screen and (min-width: 884px){
-  .menu{
+  nav ul{
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: flex-end;
   }
-  .menu li {
-    flex: 1 0;
+  nav ul li{
+    flex-grow: 1;
+    text-align: center;
   }
   #images{
     display: grid;

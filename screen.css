@@ -30,8 +30,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 h1, h2 {
-  font-size: 30px;
   color: #007499;
+  font-size: 30px;
   padding-bottom: 13px;
 }
 h2 {
@@ -40,6 +40,7 @@ h2 {
 h3 {
   color: #FBB903;
   font-size: 26.66px; /*em=1.666 */
+  line-height: 34.658px;/* (26/20)*26.66= */
   padding-bottom: 7.5px;
 }
 p {

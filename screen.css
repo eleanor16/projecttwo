@@ -108,7 +108,7 @@ img {
 #header img {
   grid-column: 1/2;
   align-self: end;
-  width: 100px;
+  width: 200px;
 }
 .menu {
   grid-column: 2/2;

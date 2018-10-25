@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1, h2 {
   color: #007499;
-  font-size: 30px;
+  font-size: 30px; /*35.538px (next size up)felt too large, so dropped the size till comfortbale*/
   padding-bottom: 13px;
 }
 h2 {
@@ -40,7 +40,6 @@ h2 {
 h3 {
   color: #FBB903;
   font-size: 26.66px; /*em=1.666 */
-  line-height: 34.658px;/* (26/20)*26.66= */
   padding-bottom: 7.5px;
 }
 p {
@@ -81,6 +80,10 @@ nav ul li {
 }
 /*colors in the logo: orange= #FC7203  dark blue=#007499  light blue=#00B2CE
      yellow=#FBB903  grey=#616161 */
+#closing h2 {
+  line-height: 39px; /* (26/20)*30=39 */
+  padding-bottom: 0;
+}
 #logo {
   padding-left: 22px;
 }

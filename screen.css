@@ -26,10 +26,10 @@ main {
   padding-left: 20px;
   padding-right: 20px;
 }
-h1, h2, h3, h4, h5, h6{
-font-weight: bold;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
 }
-h1,h2 {
+h1, h2 {
   font-size: 30px;
   color: #007499;
   padding-bottom: 13px;
@@ -78,7 +78,7 @@ nav ul li {
   text-align: center;
   padding-bottom: 7.5px;
 }
- /*colors in the logo: orange= #FC7203  dark blue=#007499  light blue=#00B2CE
+/*colors in the logo: orange= #FC7203  dark blue=#007499  light blue=#00B2CE
      yellow=#FBB903  grey=#616161 */
 #logo {
   padding-left: 22px;

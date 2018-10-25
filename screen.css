@@ -121,12 +121,13 @@ img {
   }
 }
 @media screen and (min-width: 500px) {
-  figure {
-    width: 460px;
-  }
+
 }
 @media screen and (min-width: 592px) {
   p {
+    width: 552px;
+  }
+  figure {
     width: 552px;
   }
 }
@@ -158,17 +159,20 @@ img {
     margin: 0 3.75px;
     text-align: center;
   }
+  figure {
+    width: 850px;
+  }
   .images {
     display: grid;
     grid-auto-flow: row;
-    grid-gap: 13px;
-    grid-template-columns: 57% 43%;
+    grid-gap: 20px;
+    grid-template-columns: 63% 57%;
     padding-bottom: 13px;
     width: 884px;
   }
   .images img {
     grid-column: 1/2;
-    width: 460px;
+    width: 552px;
   }
   .images figcaption {
     grid-column: 2/2;

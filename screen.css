@@ -8,15 +8,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 /*Base Rules*/
-html{
+html {
   /*basing off of the perfect 4th from www.modularscale.com*/
   font-size: 20px;
   background-color: #e8e6e4;
   line-height: 26px; /* 1.2*20=24 , seems too small, so make this number bigger */
   font-family: Montserrat, Helvetica, "Gill Sans Nova", Georgia, Verdana, sans-serif;
-/*maybe use courier for the caption things*/
 }
-header{
+header {
   background-color: white;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -30,43 +29,43 @@ main {
 h1, h2, h3, h4, h5, h6{
 font-weight: bold;
 }
-h1,h2{
+h1,h2 {
   font-size: 30px;
   color: #007499;
   padding-bottom: 13px;
 }
-h2{
+h2 {
   padding-top: 13px;
 }
-h3{
+h3 {
   color: #FBB903;
   font-size: 26.66px; /*em=1.666 */
   padding-bottom: 7.5px;
 }
-p{
+p {
   padding-bottom: 13px;
 }
-p a{
+p a {
   color: #00B2CE;
 }
-figcaption{
+figcaption {
   font-size: 16px;
   padding-top: 7.5px;
 }
-footer{
+footer {
   background-color: #007499;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
 }
-.endingp{
+.endingp {
   padding-bottom: 7.5px;
 }
-nav{
+nav {
   padding-right: 3.75px;
 }
-nav a{
+nav a {
   background-color: #007499;
   border-radius: 7.5px;
   color: white;
@@ -75,91 +74,91 @@ nav a{
   padding: 3.75px 0;
   text-decoration: none;
 }
-nav ul li{
+nav ul li {
   text-align: center;
   padding-bottom: 7.5px;
 }
  /*colors in the logo: orange= #FC7203  dark blue=#007499  light blue=#00B2CE
      yellow=#FBB903  grey=#616161 */
-#logo{
+#logo {
   padding-left: 22px;
 }
-#who{
+#who {
   padding-top: 13px;
   padding-bottom: 7.5px;
 }
-#dates{
+#dates {
   list-style-type: square;
   padding-bottom: 16.4px;
   padding-left: 22px;
 }
 
 /* images */
-img{
+img {
   display: block;
   max-width: 100%;
 }
 
 /*Module Rules*/
-#header{
+#header {
   display: grid;
   grid-template-columns: 70% 30%;
   grid-template-rows: auto;
 }
-#header img{
+#header img {
   grid-column: 1/2;
   align-self: end;
   width: 100px;
 }
-.menu{
+.menu {
   grid-column: 2/2;
 }
 
 /*Layout Rules*/
-@media screen and (min-width: 440px){
-  #header img{
+@media screen and (min-width: 440px) {
+  #header img {
     width: 300px;
   }
 }
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) {
   figure {
     width: 460px;
   }
 }
-@media screen and (min-width: 592px){
-  p{
+@media screen and (min-width: 592px) {
+  p {
     width: 552px;
   }
 }
-@media screen and (min-width: 760px){
-  #menu a{
+@media screen and (min-width: 760px) {
+  #menu a {
     font-size: 26.66px;
     line-height: 48px; /* 27px x 1.2~32px (times 1.5)=48px */
   }
-  h1{
+  h1 {
     font-size: 35.538px;
   }
-  h2{
+  h2 {
     font-size: 30px;
   }
 }
-@media screen and (min-width: 884px){
-  #header{
+@media screen and (min-width: 884px) {
+  #header {
     grid-template-columns: 30% 70%;
   }
-  nav{
+  nav {
     padding-right: 20px;
   }
-  nav ul{
+  nav ul {
     display: flex;
     margin: 0 -3.75px;
   }
-  nav ul li{
+  nav ul li {
     flex-grow: 1;
     margin: 0 3.75px;
     text-align: center;
   }
-  #images{
+  #images {
     display: grid;
     grid-auto-flow: row;
     grid-gap: 13px;
@@ -167,11 +166,11 @@ img{
     padding-bottom: 13px;
     width: 884px;
   }
-  #images img{
+  #images img {
     grid-column: 1/2;
     width: 460px;
   }
-  #images figcaption{
+  #images figcaption {
     grid-column: 2/2;
     width: 153px;
   }

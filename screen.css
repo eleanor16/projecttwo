@@ -63,7 +63,7 @@ footer {
   padding-bottom: 7.5px;
 }
 nav {
-  padding-right: 3.75px;
+  padding-right: 7.5px;
 }
 nav a {
   background-color: #007499;
@@ -120,9 +120,6 @@ img {
     width: 300px;
   }
 }
-@media screen and (min-width: 500px) {
-
-}
 @media screen and (min-width: 592px) {
   p {
     width: 552px;
@@ -131,7 +128,7 @@ img {
     width: 552px;
   }
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 708px) {
   #logo {
     padding-left: 40px;
   }
@@ -141,6 +138,9 @@ img {
   }
   main {
     padding-left: 40px;
+  }
+  nav {
+    padding-right: 13px;
   }
   h1 {
     font-size: 35.538px;

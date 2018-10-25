@@ -146,10 +146,10 @@ img {
   nav {
     padding-right: 13px;
   }
-  h1 {
+  h1, h2 {
     font-size: 35.538px;
   }
-  h2 {
+  h3 {
     font-size: 30px;
   }
 }

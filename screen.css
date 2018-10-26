@@ -181,7 +181,7 @@ img {
   .images {
     display: grid;
     grid-auto-flow: row;
-    grid-gap: 20px;
+    grid-gap: 26px;
     grid-template-columns: 63% 57%;
     padding-bottom: 13px;
     width: 884px;

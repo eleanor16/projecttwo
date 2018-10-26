@@ -48,6 +48,9 @@ p {
 p a {
   color: #00B2CE;
 }
+figure {
+  padding-bottom: 7.5px;
+}
 figcaption {
   font-size: 20px;
   padding-top: 7.5px;

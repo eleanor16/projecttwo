@@ -204,3 +204,11 @@ img {
     background-color: #f2efed;
   }
 }
+@media screen and (min-width: 1232px) {
+  figure {
+    width: 1180px;
+  }
+  .images {
+    grid-gap: 40px;
+  }
+}

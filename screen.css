@@ -12,102 +12,102 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /*Base Rules*/
 html {
   /*basing off of the perfect 4th from www.modularscale.com*/
-  font-size: 20px;
+  font-size: 1.25em; /* 20px/16px=1.25em */
   background-color: #e8e6e4;
-  line-height: 26px; /* 1.2*20=24 , seems too small, so make this number bigger */
+  line-height: 1.3em; /* 1.2*20=24 , seems too small, so make this number bigger *//* 26px/20px=1.3em */
   font-family: Montserrat, Helvetica, "Gill Sans Nova", Georgia, Verdana, sans-serif;
 }
 header {
   background-color: white;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1em;
+  padding-bottom: 1em;
   width: 100%;
 }
 main {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 h1, h2 {
   color: #007499;
-  font-size: 30px; /*35.538px (next size up)felt too large, so dropped the size till comfortbale*/
-  padding-bottom: 13px;
+  font-size: 1.5em; /*35.538px (next size up)felt too large, so dropped the size till comfortbale*/ /* 30px/20px=1.5em */
+  padding-bottom: 0.433em; /* 13px/30px=.433em */
 }
 h2 {
-  padding-top: 13px;
+  padding-top: 0.443em;
 }
 h3 {
   color: #FBB903;
-  font-size: 26.66px; /*em=1.666 */
-  padding-bottom: 7.5px;
+  font-size: 1.333em; /*em=1.666 */ /* 26.66px/20px=1.333em */
+  padding-bottom: 0.28em; /* 7.5px/26.66px=.28em */
 }
 p {
-  padding-bottom: 13px;
+  padding-bottom: 0.65em; /* 13px/20px=.65em */
 }
 p a {
   color: #00B2CE;
 }
 figure {
-  padding-bottom: 7.5px;
+  padding-bottom: 0.375em; /* 7.5px/20px=.375em */
 }
 img {
   display: block;
   max-width: 100%;
 }
 .images img {
-  padding-bottom: 7.5px;
+  padding-bottom: 0.375em;
 }
 figcaption {
-  font-size: 20px;
-  border: solid 3.75px;
-  padding: 7.5px;
-  border-radius: 7.5px;
+  font-size: 1em; /* 20px/20px=1em */
+  border: solid 0.1875em; /* 3.75px/20px=.1875em */
+  padding: 0.375em;
+  border-radius: 0.375em;
   border-color: #007499;
   background-color: #f2efed;
 }
 footer {
   background-color: #007499;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
 }
 .endingp {
-  padding-bottom: 7.5px;
+  padding-bottom: 0.375em;
 }
 nav {
-  padding-right: 7.5px;
+  padding-right: 0.375em;
 }
 nav a {
   background-color: #007499;
-  border-radius: 7.5px;
+  border-radius: 0.469em; /* 7.5px/16px=.469em */
   color: white;
   display: block;
-  font-size: 16px;
-  padding: 3.75px 0;
+  font-size: 0.8em;/* 16px/20px=.8em */
+  padding: 0.19em 0; /*3.75px/16px=.234m */
   text-decoration: none;
 }
 nav ul li {
   text-align: center;
-  padding-bottom: 7.5px;
+  padding-bottom: 0.375em;
 }
 #closing h2 {
-  line-height: 39px; /* (26/20)*30=39 */
+  line-height: 1.1em; /* (26/20)*30=39 */ /* 39px/35.538px=1.1em */
   padding-bottom: 0;
 }
 #logo {
-  padding-left: 22px;
+  padding-left: 1em;
 }
 #who {
-  padding-top: 13px;
-  padding-bottom: 7.5px;
+  padding-top: 0.65em; /* 13px/20px=.65em */
+  padding-bottom: 0.375em;
 }
 #dates {
   list-style-type: square;
-  padding-bottom: 16.4px;
-  padding-left: 22px;
+  padding-bottom: 0.65em;
+  padding-left: 1em;
 }
 
 
@@ -120,7 +120,7 @@ nav ul li {
 #header img {
   grid-column: 1/2;
   align-self: end;
-  width: 180px;
+  width: 9em; /* 180px/20px=9em */
 }
 .menu {
   grid-column: 2/2;
@@ -130,38 +130,38 @@ nav ul li {
 /*making logo larger*/
 @media screen and (min-width: 440px) {
   #header img {
-    width: 300px;
+    width: 240px; /* 300px/20px=15em */
   }
 }
 /*stopping paragraph and figure widths*/
 @media screen and (min-width: 592px) {
   p {
-    width: 552px;
+    width: 27.6em; /* 552px/20px=27.6em */
   }
   figure {
-    width: 552px;
+    width: 27.63em;
   }
 }
 /*changing nav text sizes and main padding to improve readability*/
 @media screen and (min-width: 708px) {
   #logo {
-    padding-left: 40px;
+    padding-left: 2em; /* 40px/20px=2em */
   }
   #menu a {
-    font-size: 26.66px;
-    line-height: 48px; /* 27px x 1.2~32px (times 1.5)=48px */
+    font-size: 1.333em; /* 26.66px/20px=1.333em */
+    line-height: 1.8em; /* 27px x 1.2~32px (times 1.5)=48px */ /* 48px/26.66px=1.8em */ /* 48px/26.66px=1.8em */
   }
   main {
-    padding-left: 40px;
+    padding-left: 2em;
   }
   nav {
-    padding-right: 13px;
+    padding-right: 0.65em; /* 13px/20px=.65em */
   }
   h1, h2 {
-    font-size: 35.538px;
+    font-size: 1.78em; /* 35.538px/20px=1.78em */
   }
   h3 {
-    font-size: 30px;
+    font-size: 1.5em; /* 30px/20px=1.5em */
   }
 }
 /*applying flexbox to header and figures*/
@@ -170,44 +170,43 @@ nav ul li {
     grid-template-columns: 30% 70%;
   }
   nav {
-    padding: 0 20px;
+    padding: 0 1em;
   }
   nav ul {
     display: flex;
-    margin: 0 -3.75px;
+    margin: 0 -0.19em;
   }
   nav ul li {
     flex-grow: 1;
-    margin: 0 3.75px;
-    text-align: center;
+    margin: 0 0.19em; /* 3.75px/20px=.19em */
   }
   .images {
-    padding-bottom: 13px;
-    padding-right: 40px;
+    padding-bottom: 0.65em; /*13px/20px=.65em */
+    padding-right: 2em; /* 40px */
     display: flex;
     align-items: flex-end;
     width: 100%;
   }
   .images img {
-    flex: 0 0 552px;
+    flex: 0 0 27.6em;
     padding-bottom: 0;
-    margin-right: 13px;
+    margin-right: 0.65em;
   }
   .images figcaption {
-    border: solid 3.75px;
-    margin-left: 13px;
-    border-radius: 7.5px;
+    border: solid 0.163em; /* 3.75px/20px=.19em */
+    margin-left: 0.65em;
+    border-radius: 0.375em;
     border-color: #007499;
     background-color: #f2efed;
   }
 }
 @media screen and (min-width: 1232px) {
   .images img {
-    margin-right: 20px;
-    flex: 0 0 552px;
+    margin-right: 1em;
+    flex: 0 0 27.6em;
   }
   .images figcaption {
-    margin-left: 20px;
-    flex: 0 0 552px;
+    margin-left: 1em;
+    flex: 0 0 27.6em;
   }
 }

@@ -184,7 +184,7 @@ nav ul li {
     padding-right: 2em; /* 40px */
     display: flex;
     align-items: flex-end;
-    width: 100%;
+    width: auto;
   }
   .images img {
     flex: 0 0 27.6em;

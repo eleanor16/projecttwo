@@ -183,31 +183,24 @@ img {
     text-align: center;
   }
   figure {
-    width: 850px;
+    width: 100%;
   }
   .images {
-    display: grid;
-    grid-auto-flow: row;
     grid-gap: 26px;
-    grid-template-columns: 63% 57%;
     padding-bottom: 13px;
     padding-right: 40px;
-    width: 884px;
+    display: flex;
+    align-items: flex-end;
   }
   .images img {
-    grid-column: 1/2;
-    width: 552px;
+    flex: 0 0 552px;
+    padding-bottom: 0;
   }
   .images figcaption {
-    grid-column: 2/2;
-    width: ;153px;
     border: solid 3.75px;
-    padding: 13px;
+    padding: 7.5px;
     border-radius: 7.5px;
     border-color: #007499;
     background-color: #f2efed;
   }
-}
-#where figure, #discipleship figure {
-  display: ;none;
 }

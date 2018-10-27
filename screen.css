@@ -202,13 +202,11 @@ nav ul li {
   }
 }
 @media screen and (min-width: 1232px) {
-  figure {
-    width: 1180px;
-  }
   .images img {
     margin-right: 20px;
   }
   .images figcaption {
     margin-left: 20px;
+    flex: 0 0 552px;
   }
 }

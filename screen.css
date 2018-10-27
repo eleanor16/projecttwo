@@ -164,7 +164,7 @@ nav ul li {
     font-size: 30px;
   }
 }
-/*applying flexbox to header and grid to figures*/
+/*applying flexbox to header and figures*/
 @media screen and (min-width: 884px) {
   #header {
     grid-template-columns: 30% 70%;
@@ -181,23 +181,21 @@ nav ul li {
     margin: 0 3.75px;
     text-align: center;
   }
-  figure {
-    width: 100%;
-  }
   .images {
-    grid-gap: 26px;
     padding-bottom: 13px;
     padding-right: 40px;
     display: flex;
     align-items: flex-end;
+    width: 100%;
   }
   .images img {
     flex: 0 0 552px;
     padding-bottom: 0;
+    margin-right: 13px;
   }
   .images figcaption {
     border: solid 3.75px;
-    padding: 7.5px;
+    margin-left: 13px;
     border-radius: 7.5px;
     border-color: #007499;
     background-color: #f2efed;
@@ -207,7 +205,10 @@ nav ul li {
   figure {
     width: 1180px;
   }
-  .images {
-    grid-gap: 40px;
+  .images img {
+    margin-right: 20px;
+  }
+  .images figcaption {
+    margin-left: 20px;
   }
 }

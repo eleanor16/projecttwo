@@ -202,7 +202,6 @@ nav ul li {
 @media screen and (min-width: 1232px) {
   .images img {
     margin-right: 1em;
-    flex: 0 0 27.6em;
   }
   .images figcaption {
     margin-left: 1em;

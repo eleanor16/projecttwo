@@ -49,7 +49,7 @@ p a {
   color: #00B2CE;
 }
 figure {
-  padding-bottom: 0.375em; /* 7.5px/20px=.375em */
+  padding-bottom: 0.75em; /* 7.5px/20px=.375em */
 }
 img {
   display: block;
@@ -131,6 +131,9 @@ nav ul li {
   #header img {
     width: 240px; /* 300px/20px=15em */
   }
+  .images img {
+    padding-bottom: 0.75em;
+  }
 }
 /*stopping paragraph and figure widths*/
 @media screen and (min-width: 592px) {
@@ -140,6 +143,13 @@ nav ul li {
   .images {
     display: grid;
     grid-template-columns: 27.6em;
+    padding: 13px 0;
+  }
+  h2 {
+    padding-bottom: 0;
+  }
+  h3 {
+    padding-top: 13px;
   }
 }
 /*changing nav text sizes and main padding to improve readability*/

@@ -137,10 +137,9 @@ nav ul li {
   p {
     width: 27.6em; /* 552px/20px=27.6em */
   }
-  figure {
+  .images {
     display: grid;
     grid-template-columns: 27.6em;
-    /*width: 27.63em;*/
   }
 }
 /*changing nav text sizes and main padding to improve readability*/
@@ -186,7 +185,6 @@ nav ul li {
     padding-right: 2em; /* 40px */
     display: flex;
     align-items: flex-end;
-    /*width: auto;*/
   }
   .images img {
     flex: 0 0 27.6em;

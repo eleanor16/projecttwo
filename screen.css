@@ -22,9 +22,28 @@ header {
   padding-bottom: 1em;
   padding-top: 1em;
 }
-main {
+nav {
+  padding-right: 0.375em;
+}
+nav a {
+  background-color: #007499;
+  border-radius: 0.469em; /* 7.5px/16px=.469em */
+  color: white;
+  display: block;
+  font-size: 0.8em;/* 16px/20px=.8em */
+  padding: 0.19em 0; /*3.75px/16px=.234m */
+  text-decoration: none;
+}
+nav ul li {
+  padding-bottom: 0.375em;
+  text-align: center;
+}
+#logo {
   padding-left: 1em;
-  padding-right: 1em;
+}
+#who {
+  padding-bottom: 0.375em;
+  padding-top: 0.65em; /* 13px/20px=.65em */
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
@@ -37,16 +56,32 @@ h1, h2 {
 h2 {
   padding-top: 0.443em;
 }
+#closing h2 {
+  line-height: 1.1em; /* (26/20)*30=39 */ /* 39px/35.538px=1.1em */
+  padding-bottom: 0;
+}
 h3 {
   color: #FBB903;
   font-size: 1.333em; /* 26.66px/20px=1.333em */
   padding-bottom: 0.28em; /* 7.5px/26.66px=.28em */
+}
+main {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 p {
   padding-bottom: 0.65em; /* 13px/20px=.65em */
 }
 p a {
   color: #00B2CE;
+}
+.endingp {
+  padding-bottom: 0.375em;
+}
+#dates {
+  list-style-type: square;
+  padding-bottom: 0.65em;
+  padding-left: 1em;
 }
 figure {
   padding-bottom: 0.75em; /* 7.5px/20px=.375em */
@@ -73,44 +108,8 @@ footer {
   padding-right: 1em;
   padding-top: 1em;
 }
-.endingp {
-  padding-bottom: 0.375em;
-}
-nav {
-  padding-right: 0.375em;
-}
-nav a {
-  background-color: #007499;
-  border-radius: 0.469em; /* 7.5px/16px=.469em */
-  color: white;
-  display: block;
-  font-size: 0.8em;/* 16px/20px=.8em */
-  padding: 0.19em 0; /*3.75px/16px=.234m */
-  text-decoration: none;
-}
-nav ul li {
-  padding-bottom: 0.375em;
-  text-align: center;
-}
-#closing h2 {
-  line-height: 1.1em; /* (26/20)*30=39 */ /* 39px/35.538px=1.1em */
-  padding-bottom: 0;
-}
-#logo {
-  padding-left: 1em;
-}
-#who {
-  padding-bottom: 0.375em;
-  padding-top: 0.65em; /* 13px/20px=.65em */
-}
-#dates {
-  list-style-type: square;
-  padding-bottom: 0.65em;
-  padding-left: 1em;
-}
 
-
-/*Module Rules*/
+/* setting the grid for the header */
 #header {
   display: grid;
   grid-template-columns: 70% 30%;
@@ -125,7 +124,9 @@ nav ul li {
   grid-column: 2/2;
 }
 
+
 /*Media Queries*/
+
 /*making logo larger*/
 @media screen and (min-width: 440px) {
   .images img {
@@ -135,16 +136,9 @@ nav ul li {
     width: 12em; /* 240px/20px=12em */
   }
 }
+
 /*stopping paragraph and figure widths*/
 @media screen and (min-width: 592px) {
-  p {
-    width: 27.6em; /* 552px/20px=27.6em */
-  }
-  .images {
-    display: grid;
-    grid-template-columns: 27.6em;
-    padding: 0.65em 0; /* 13px/20px=.65em */
-  }
   #menu a {
     font-size: 1.333em; /* 26.66px/20px=1.333em */
     line-height: 1.8em; /* 27px x 1.2~32px (times 1.5)=48px */ /* 48px/26.66px=1.8em */ /* 48px/26.66px=1.8em */
@@ -155,15 +149,21 @@ nav ul li {
   h3 {
     padding-top: 0.488em; /* 13px/26.66px=.488em */
   }
+  p {
+    width: 27.6em; /* 552px/20px=27.6em */
+  }
+  .images {
+    display: grid;
+    grid-template-columns: 27.6em;
+    padding: 0.65em 0; /* 13px/20px=.65em */
+  }
 }
+
 /*changing nav text sizes and main padding to improve readability*/
 @media screen and (min-width: 708px) {
   #logo {
     padding-bottom: 1em;
     padding-left: 2em; /* 40px/20px=2em */
-  }
-  main {
-    padding-left: 2em;
   }
   nav {
     padding-right: 0.65em; /* 13px/20px=.65em */
@@ -174,7 +174,11 @@ nav ul li {
   h3 {
     font-size: 1.5em; /* 30px/20px=1.5em */
   }
+  main {
+    padding-left: 2em;
+  }
 }
+
 /*applying flexbox to header and figures*/
 @media screen and (min-width: 884px) {
   #header {
@@ -210,6 +214,8 @@ nav ul li {
     margin-left: 0.65em;
   }
 }
+
+/* fixing the size of figcaptions */
 @media screen and (min-width: 1232px) {
   .images img {
     margin-right: 1em;

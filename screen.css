@@ -38,6 +38,16 @@ nav ul li {
   padding-bottom: 0.375em;
   text-align: center;
 }
+#who #nav-who,
+#where #nav-where,
+#trips #nav-trips,
+#closing #nav-closing,
+nav a:hover,
+nav a:active,
+nav a:focus {
+  background: #FBB903;
+  color: white;
+}
 #logo {
   padding-left: 1em;
 }

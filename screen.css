@@ -16,6 +16,7 @@ html {
   font-family: Montserrat, Helvetica, "Gill Sans Nova", Georgia, Verdana, sans-serif;
   font-size: 1.25em; /* 20px/16px=1.25em */
   line-height: 1.3em; /* 1.2*20=24 , seems too small, so make this number bigger *//* 26px/20px=1.3em */
+  padding: 0;
 }
 header {
   background-color: white;
@@ -45,8 +46,7 @@ nav ul li {
 nav a:hover,
 nav a:active,
 nav a:focus {
-  background: #FBB903;
-  color: white;
+  background-color: #FBB903;
 }
 #logo {
   padding-left: 1em;
@@ -62,6 +62,9 @@ h1, h2 {
   color: #007499;
   font-size: 1.5em; /*35.538px (next size up)felt too large, so dropped the size till comfortbale*/ /* 30px/20px=1.5em */
   padding-bottom: 0.433em; /* 13px/30px=.433em */
+}
+h1 {
+  padding-top: 0.443em;
 }
 h2 {
   padding-top: 0.443em;

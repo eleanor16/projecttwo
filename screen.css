@@ -53,6 +53,9 @@ nav a:focus {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
+#cru {
+  display: none;
+}
 h1, h2 {
   color: #007499;
   font-size: 1.5em; /*35.538px (next size up)felt too large, so dropped the size till comfortbale*/ /* 30px/20px=1.5em */

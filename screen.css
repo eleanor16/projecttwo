@@ -45,7 +45,8 @@ nav ul li {
 nav a:hover,
 nav a:active,
 nav a:focus {
-  background-color: #FBB903;
+  border: solid;
+  border-color: #FBB903;
 }
 #logo {
   padding-left: 1em;

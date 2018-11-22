@@ -51,13 +51,13 @@ nav a:focus {
 #logo {
   padding-left: 1em;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .bigheader, .smallheader {
   font-weight: bold;
 }
 #cru {
   display: none;
 }
-h1, h2 {
+h1, h2, .bigheader {
   color: #007499;
   font-size: 1.5em; /*35.538px (next size up)felt too large, so dropped the size till comfortbale*/ /* 30px/20px=1.5em */
   padding-bottom: 0.433em; /* 13px/30px=.433em */
@@ -66,16 +66,17 @@ h1 {
   padding-bottom: 0.375em;
   padding-top: 0.65em; /* 13px/20px=.65em */
 }
-h2 {
+h2, .bigheader {
   padding-top: 0.443em;
 }
 #closing h2 {
   line-height: 1.1em; /* (26/20)*30=39 */ /* 39px/35.538px=1.1em */
   padding-bottom: 0;
 }
-h3 {
+.smallheader {
   color: #FBB903;
   font-size: 1.333em; /* 26.66px/20px=1.333em */
+  list-style-type: none;
   padding-bottom: 0.28em; /* 7.5px/26.66px=.28em */
 }
 main {
@@ -156,10 +157,10 @@ footer {
     font-size: 1.333em; /* 26.66px/20px=1.333em */
     line-height: 1.8em; /* 27px x 1.2~32px (times 1.5)=48px */ /* 48px/26.66px=1.8em */ /* 48px/26.66px=1.8em */
   }
-  h2 {
+  h2, .bigheader {
     padding-bottom: 0;
   }
-  h3 {
+  .smallheader {
     padding-top: 0.488em; /* 13px/26.66px=.488em */
   }
   p {
@@ -181,10 +182,10 @@ footer {
   nav {
     padding-right: 0.65em; /* 13px/20px=.65em */
   }
-  h1, h2 {
+  h1, h2, .bigheader {
     font-size: 1.78em; /* 35.538px/20px=1.78em */
   }
-  h3 {
+  .smallheader {
     font-size: 1.5em; /* 30px/20px=1.5em */
   }
   main {

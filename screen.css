@@ -191,6 +191,9 @@ footer {
   main {
     padding-left: 2em;
   }
+  footer {
+    padding-left: 2em;
+  }
 }
 
 /*applying flexbox to header and figures*/

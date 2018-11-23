@@ -134,7 +134,7 @@ footer {
   grid-column: 1/2;
   width: 9em; /* 180px/20px=9em */
 }
-.menu {
+#navmenu {
   grid-column: 2/2;
 }
 

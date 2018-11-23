@@ -242,3 +242,10 @@ footer {
     margin-left: 1em;
   }
 }
+
+.js #menu {
+  display:none;
+}
+.js #menu.visible {
+  display: block;
+}

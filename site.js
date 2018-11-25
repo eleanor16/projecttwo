@@ -39,6 +39,10 @@ console.log('top is here');
       }
     })
 
+    if (typeof window.matchMedia === 'undefined') {
+      return;
+    }
+
     if (window.matchMedia("(min-width: 426px)"). matches) {
         html_tag.classList = 'nojs';
     } else {

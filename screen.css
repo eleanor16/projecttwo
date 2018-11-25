@@ -249,3 +249,7 @@ footer {
 .js #menu.visible {
   display: block;
 }
+
+.nojs #nav {
+  display: none;
+}

@@ -38,6 +38,14 @@ console.log('top is here');
         console.log('35 is good');
       }
     })
+
+    if (window.matchMedia("(min-width: 426px)"). matches) {
+        html_tag.classList = 'nojs';
+    } else {
+      html_tag.classList = 'js';
+    }
+
+
   });
 
   console.log("JavaScript is working!");

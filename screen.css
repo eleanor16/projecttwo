@@ -12,10 +12,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /*Base Rules*/
 html {
   /*basing off of the perfect 4th from www.modularscale.com*/
-  background-color: #e8e6e4;
+  background-color: #007499;
   font-family: Montserrat, Helvetica, "Gill Sans Nova", Georgia, Verdana, sans-serif;
   font-size: 1.25em; /* 20px/16px=1.25em */
   line-height: 1.3em; /* 1.2*20=24 , seems too small, so make this number bigger *//* 26px/20px=1.3em */
+}
+body {
+  background-color: #e8e6e4;
 }
 header {
   background-color: white;

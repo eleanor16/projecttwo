@@ -30,6 +30,8 @@ nav {
 }
 nav a {
   background-color: #007499;
+  border: solid;
+  border-color: white;
   border-radius: 0.469em; /* 7.5px/16px=.469em */
   color: white;
   display: block;
@@ -48,7 +50,6 @@ nav ul li {
 nav a:hover,
 nav a:active,
 nav a:focus {
-  border: solid;
   border-color: #FBB903;
 }
 #logo {

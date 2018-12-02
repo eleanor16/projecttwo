@@ -228,10 +228,6 @@ footer {
     padding-bottom: 0;
   }
   .images figcaption {
-    background-color: #f2efed;
-    border: solid 0.163em; /* 3.75px/20px=.19em */
-    border-color: #007499;
-    border-radius: 0.375em;
     margin-left: 0.65em;
   }
 }

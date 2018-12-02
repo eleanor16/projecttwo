@@ -26,7 +26,7 @@ header {
   padding-top: 1em;
 }
 nav {
-  padding-right: 0.375em;
+  padding-right: 5%; /*.375em*/
 }
 nav a {
   background-color: #007499;
@@ -53,7 +53,7 @@ nav a:focus {
   border-color: #FBB903;
 }
 #logo {
-  padding-left: 1em;
+  padding-left: 7%; /*1em*/
 }
 h1, h2, h3, h4, h5, h6, .bigheader, .smallheader {
   font-weight: bold;
@@ -84,8 +84,8 @@ h2, .bigheader {
   padding-bottom: 0.28em; /* 7.5px/26.66px=.28em */
 }
 main {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 p {
   padding-bottom: 0.65em; /* 13px/20px=.65em */
@@ -99,7 +99,7 @@ p a {
 #dates {
   list-style-type: square;
   padding-bottom: 0.65em;
-  padding-left: 1em;
+  padding-left: 1.6%;
 }
 figure {
   padding-bottom: 0.75em; /* 7.5px/20px=.375em */
@@ -117,13 +117,13 @@ figcaption {
   border-color: #007499;
   border-radius: 0.375em;
   font-size: 1em; /* 20px/20px=1em */
-  padding: 0.375em;
+  padding: 0.375em; /*leaving this in em instead of % bc it has top/bottom in it*/
 }
 footer {
   background-color: #007499;
   color: white;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-top: 1em;
 }
 
@@ -181,10 +181,10 @@ footer {
 @media screen and (min-width: 708px) {
   #logo {
     padding-bottom: 1em;
-    padding-left: 2em; /* 40px/20px=2em */
+    padding-left: 6%; /* 40px/20px=2em */
   }
   nav {
-    padding-right: 0.65em; /* 13px/20px=.65em */
+    padding-right: 4%; /* 13px/20px=.65em */
   }
   h1, h2, .bigheader {
     font-size: 1.78em; /* 35.538px/20px=1.78em */
@@ -193,20 +193,20 @@ footer {
     font-size: 1.5em; /* 30px/20px=1.5em */
   }
   main {
-    padding-left: 2em;
+    padding-left: 4%;
   }
   footer {
-    padding-left: 2em;
+    padding-left: 4%;
   }
 }
 
 /*applying flexbox to header and figures*/
 @media screen and (min-width: 884px) {
   #header {
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 35% 65%;
   }
-  nav {
-    padding: 0 1em;
+  #logo {
+    padding-left: 10.5%;
   }
   nav ul {
     display: flex;
@@ -220,7 +220,7 @@ footer {
     align-items: flex-end;
     display: flex;
     padding-bottom: 0.65em; /*13px/20px=.65em */
-    padding-right: 2em; /* 40px */
+    padding-right: 4%; /* 40px */
   }
   .images img {
     flex: 0 0 27.6em;
@@ -248,7 +248,7 @@ footer {
 }
 
 .js #menu {
-  display:none;
+  display: none;
 }
 .js #menu.visible {
   display: block;

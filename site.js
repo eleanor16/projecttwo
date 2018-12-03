@@ -1,14 +1,15 @@
 console.log('top is here');
 (function(){
   console.log('funtion ran');
-  if (typeof document.querySelector === 'undefined') {
+  if (typeof document.querySelector === 'undefined' || typeof window.getComputedStyle === 'undefined') {
   console.log("JavaScript is working!");
     return;
   }
 
-  document.addEventListener('DOMContentLoaded', function(){
+  document.addEventListener('DOMContentLoaded', function navToggle() {
 
     console.log('The DOM has loaded');
+
 
     var html_tag = document.querySelector('html');
     console.log('12 is good');
@@ -48,9 +49,42 @@ console.log('top is here');
     } else {
       html_tag.classList = 'js';
     }
-
-
+    console.log('51 works');
   });
+
+  navToggle(); /*problems have arisen here*/
+
+
+
 
   console.log("JavaScript is working!");
 })();
+
+/*(function() {
+  console.log('59 works');
+  if (typeof document.querySelector === 'undefined' || typeof window.getComputedStyle === 'undefined') {
+    return;
+  }
+  console.log('61 works');
+
+  function responsiveFeature(feature) {
+  /*STOPPED WORKING AT PREVIOUS LINE*/
+  /*  console.log('59 good');
+    var size = window
+      .getComputedStyle(document.body, ':after')
+      .getPropertyValue('content');
+      console.log('65 good');
+    var has_feature = true;
+    console.log('67 good');
+    if(size.indexOf(feature) === -1) {
+      console.log('line 69');
+      has_feature = false;
+      console.log('line 71');
+    }
+    return has_feature;
+  }
+
+
+
+  console.log("JavaScript is working!");
+})(); */

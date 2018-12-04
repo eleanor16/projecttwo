@@ -99,7 +99,7 @@ p a {
 #dates {
   list-style-type: square;
   padding-bottom: 0.65em;
-  padding-left: 1.6%;
+  padding-left: 7%;
 }
 figure {
   padding-bottom: 0.75em; /* 7.5px/20px=.375em */
@@ -193,6 +193,9 @@ footer {
     font-size: 1.5em; /* 30px/20px=1.5em */
   }
   main {
+    padding-left: 4%;
+  }
+  #dates {
     padding-left: 4%;
   }
   footer {

@@ -25,7 +25,7 @@ header {
   padding-bottom: 1em;
   padding-top: 1em;
 }
-nav {
+#navmenu {
   padding-right: 5%; /*.375em*/
 }
 nav a {
@@ -241,6 +241,24 @@ footer {
     flex: 0 0 27.6em;
     margin-left: 1em;
   }
+}
+
+/*styling parts used with javascript*/
+
+#nav {
+  background-color: #f2efed;
+  border: solid;
+  border-color: #007499;
+  border-radius: 0.469em; /* 7.5px/16px=.469em */
+  display: block;
+  padding: 0.19em 0; /*3.75px/16px=.234m */
+  margin-bottom: 0.5625em;
+  text-align: center;
+
+}
+#nav a {
+  text-decoration: none;
+  color: black;
 }
 
 .js #menu {

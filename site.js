@@ -63,7 +63,6 @@ console.log('top is here');
 
   }
 
-  navToggle();
 
 
 

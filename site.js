@@ -6,11 +6,21 @@ console.log('top is here');
     return;
   }
 
-  document.addEventListener('DOMContentLoaded', function navToggle() {
+  document.addEventListener('DOMContentLoaded', function() {
 
     console.log('The DOM has loaded');
+    navToggle();
+    console.log('yay for 13');
+    window.addEventListener('resize', navToggle);
 
 
+
+      console.log('51 works');
+
+
+  });
+
+  function navToggle(){
     var html_tag = document.querySelector('html');
     console.log('12 is good');
     html_tag.classList.remove('nojs');
@@ -40,6 +50,7 @@ console.log('top is here');
       }
     })
 
+
     if (typeof window.matchMedia === 'undefined') {
       return;
     }
@@ -49,10 +60,11 @@ console.log('top is here');
     } else {
       html_tag.classList = 'js';
     }
-    console.log('51 works');
-  });
 
-  navToggle(); /*problems have arisen here*/
+  }
+
+  navToggle();
+
 
 
 

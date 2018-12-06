@@ -64,7 +64,6 @@ h1, h2, h3, h4, h5, h6, #bigheader, .smallheader {
 h1, h2, #bigheader {
   color: #007499;
   font-size: 1.5em; /*35.538px (next size up)felt too large, so dropped the size till comfortbale*/ /* 30px/20px=1.5em */
- /* 13px/30px=.433em */
 }
 h1 {
   padding-bottom: 0.375em;
@@ -73,8 +72,7 @@ h1 {
 h2, {
   padding-top: 0.443em;
 }
-#closing h2 {
-  line-height: 1.1em; /* (26/20)*30=39 */ /* 39px/35.538px=1.1em */
+#bigheader {
   padding-bottom: 0;
 }
 h3 {
